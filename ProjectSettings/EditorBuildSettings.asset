@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 2f4a6a35e0eb18c4cb96da87f4f60982
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/1. Variables.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/0. Printing.unity
+    guid: 0477c77c1a0cfa9428f6a001d9381352
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/2. Reading.unity
+    guid: f91eb4981825bfe44a154e4f58eda0f4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/3. Operations.unity
+    guid: a472ad90e854f314baa7faab61b63bdc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/4. If.unity
+    guid: 1badd0a26e5c52a44a365810aa963e32
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/5. For.unity
+    guid: f1f8072e11984e8499b5378a88ab5186
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/6. While.unity
+    guid: 13b2897148b62d6478fb3bfd32dc474a
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/7. Arrays.unity
+    guid: b6cda2ddca33c9d4ebf96c4d8c3ea7fc
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/8. Matrixes.unity
+    guid: 5332ffe4672bf904e93a5e0cca644cb4
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/9. Functions.unity
+    guid: 77afc1165a5a1c74b9bb38e3b585eae2
+  - enabled: 1
+    path: Assets/Scenes/Tutorial/10. Objects.unity
+    guid: f7ad0afa68e2ffa44b67efa9c27ff14e
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/1. Movement.unity
+    guid: 928c99eed08975e4e854b4e9d9cffeee
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/2. Waypoints.unity
+    guid: 519f52304aad1ce4a9510436300e9a53
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/3. Aiming.unity
+    guid: de9696b1af2ded547915de4d1a9f7ec6
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/4. Prediction.unity
+    guid: 91fc965df0ec9f04981e18d9bd052fcf
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/5. Movement and Aiming.unity
+    guid: b62175cf321dc9247a9346324a47a494
+  - enabled: 1
+    path: Assets/Scenes/Puzzles/Tank Series/6. Rotate.unity
+    guid: 227a9fef55806d8409edf04f76e27034
+  m_configObjects: {}
