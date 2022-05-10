@@ -71,10 +71,10 @@ public class CodeButton : MonoBehaviour
 
     private void Update()
     {
-            if (Input.GetKeyDown(KeyCode.Escape))
-                CloseCanvas();
-            if (Input.GetKeyDown(KeyCode.E))
-                OnMouseDown();
+            //if (Input.GetKeyDown(KeyCode.Escape))
+            //    CloseCanvas();
+            //if (Input.GetKeyDown(KeyCode.E))
+            //    OnMouseDown();
     }
 
     Color defaultColor;

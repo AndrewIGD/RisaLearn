@@ -180,7 +180,8 @@ MonoBehaviour:
 '
   progressiveText: Declare two integers, a and b. Read them from input and then print
     out the result of each operation on a new line.
-  button: {fileID: 890641483}
+  activeOnEnd:
+  - {fileID: 890641482}
 --- !u!114 &62024125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +335,7 @@ GameObject:
   - component: {fileID: 142945368}
   - component: {fileID: 142945367}
   - component: {fileID: 142945366}
+  - component: {fileID: 142945369}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -456,6 +458,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 142945364}
   m_CullTransparentMesh: 1
+--- !u!95 &142945369
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 142945364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &183880945
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,6 +490,7 @@ GameObject:
   - component: {fileID: 183880949}
   - component: {fileID: 183880948}
   - component: {fileID: 183880947}
+  - component: {fileID: 183880950}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -590,6 +613,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183880945}
   m_CullTransparentMesh: 1
+--- !u!95 &183880950
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183880945}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &188611717
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +915,7 @@ GameObject:
   - component: {fileID: 247120809}
   - component: {fileID: 247120808}
   - component: {fileID: 247120807}
+  - component: {fileID: 247120810}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -994,6 +1038,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247120805}
   m_CullTransparentMesh: 1
+--- !u!95 &247120810
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 247120805}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &258734414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,7 +1114,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: As with any other language, Risa can process data with the help
     of operators.
-  button: {fileID: 142945366}
+  activeOnEnd:
+  - {fileID: 142945364}
 --- !u!114 &258734417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1222,7 +1287,8 @@ MonoBehaviour:
 '
   progressiveText: '- modulo: <color=#2196F3>var</color> mod = a % b; This results
     in the remainder of a divided by b.'
-  button: {fileID: 1168670421}
+  activeOnEnd:
+  - {fileID: 1168670419}
 --- !u!114 &448724894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2141,6 +2207,7 @@ GameObject:
   - component: {fileID: 890641485}
   - component: {fileID: 890641484}
   - component: {fileID: 890641483}
+  - component: {fileID: 890641487}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2263,6 +2330,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -352.90002}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &890641487
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890641482}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &995471363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,7 +2414,8 @@ MonoBehaviour:
 
 '
   progressiveText: '- difference: <color=#2196F3>var</color> d = a - b;'
-  button: {fileID: 1298948930}
+  activeOnEnd:
+  - {fileID: 1298948928}
 --- !u!114 &995471366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2489,6 +2577,7 @@ GameObject:
   - component: {fileID: 1168670423}
   - component: {fileID: 1168670422}
   - component: {fileID: 1168670421}
+  - component: {fileID: 1168670424}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2611,6 +2700,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1168670419}
   m_CullTransparentMesh: 1
+--- !u!95 &1168670424
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168670419}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1296947550
 GameObject:
   m_ObjectHideFlags: 0
@@ -2623,6 +2732,7 @@ GameObject:
   - component: {fileID: 1296947554}
   - component: {fileID: 1296947553}
   - component: {fileID: 1296947552}
+  - component: {fileID: 1296947555}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2745,6 +2855,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296947550}
   m_CullTransparentMesh: 1
+--- !u!95 &1296947555
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296947550}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1298948928
 GameObject:
   m_ObjectHideFlags: 0
@@ -2757,6 +2887,7 @@ GameObject:
   - component: {fileID: 1298948932}
   - component: {fileID: 1298948931}
   - component: {fileID: 1298948930}
+  - component: {fileID: 1298948933}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2879,6 +3010,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1298948928}
   m_CullTransparentMesh: 1
+--- !u!95 &1298948933
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298948928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1387778049
 GameObject:
   m_ObjectHideFlags: 0
@@ -3016,7 +3167,8 @@ MonoBehaviour:
 '
   progressiveText: '- division: <color=#2196F3>var</color> div = a / b; Note that
     the division of integers results in the whole part of the quotient.'
-  button: {fileID: 1296947552}
+  activeOnEnd:
+  - {fileID: 1296947550}
 --- !u!114 &1430356288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3326,7 +3478,8 @@ MonoBehaviour:
 
     - addition: <color=#2196F3>var</color>
     s = a + b;'
-  button: {fileID: 247120807}
+  activeOnEnd:
+  - {fileID: 247120805}
 --- !u!114 &1450885848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3980,7 +4133,8 @@ MonoBehaviour:
 
 '
   progressiveText: '- multiplication: <color=#2196F3>var</color> p = a * b;'
-  button: {fileID: 183880947}
+  activeOnEnd:
+  - {fileID: 183880945}
 --- !u!114 &1955061840
 MonoBehaviour:
   m_ObjectHideFlags: 0

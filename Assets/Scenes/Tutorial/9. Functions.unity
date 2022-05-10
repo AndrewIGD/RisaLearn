@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 159671558}
   - component: {fileID: 159671557}
   - component: {fileID: 159671556}
+  - component: {fileID: 159671559}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -358,6 +359,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 159671554}
   m_CullTransparentMesh: 1
+--- !u!95 &159671559
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159671554}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &205388128
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +574,8 @@ MonoBehaviour:
 
     <color=#2196F3>var</color>
     sum = Sum(<color=#FFEE58>1</color>, <color=#FFEE58>2</color>);'
-  button: {fileID: 771002084}
+  activeOnEnd:
+  - {fileID: 771002082}
 --- !u!114 &206309487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +688,7 @@ GameObject:
   - component: {fileID: 338486775}
   - component: {fileID: 338486774}
   - component: {fileID: 338486773}
+  - component: {fileID: 338486777}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -788,6 +811,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -30}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &338486777
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338486772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &385393245
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,7 +1432,8 @@ MonoBehaviour:
     we can create a function called ''Process'' and call it by simply using:
 
     Process();'
-  button: {fileID: 1071836228}
+  activeOnEnd:
+  - {fileID: 1071836226}
 --- !u!114 &755556606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,6 +1548,7 @@ GameObject:
   - component: {fileID: 771002086}
   - component: {fileID: 771002085}
   - component: {fileID: 771002084}
+  - component: {fileID: 771002087}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1626,6 +1671,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771002082}
   m_CullTransparentMesh: 1
+--- !u!95 &771002087
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771002082}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1012905296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1638,6 +1703,7 @@ GameObject:
   - component: {fileID: 1012905300}
   - component: {fileID: 1012905299}
   - component: {fileID: 1012905298}
+  - component: {fileID: 1012905301}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1760,6 +1826,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012905296}
   m_CullTransparentMesh: 1
+--- !u!95 &1012905301
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012905296}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1071836226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,6 +1858,7 @@ GameObject:
   - component: {fileID: 1071836230}
   - component: {fileID: 1071836229}
   - component: {fileID: 1071836228}
+  - component: {fileID: 1071836231}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1894,6 +1981,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071836226}
   m_CullTransparentMesh: 1
+--- !u!95 &1071836231
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071836226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1140088921
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,7 +2060,8 @@ MonoBehaviour:
     calculate the sum of 2 variables a and b, given from input.ng:
 
     Process();'
-  button: {fileID: 159671556}
+  activeOnEnd:
+  - {fileID: 159671554}
 --- !u!114 &1140088924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2601,7 +2709,8 @@ MonoBehaviour:
   timeBetweenTextAppearances: 0.05
   existingText: 
   progressiveText: Functions are one of the best ways to prevent code repetition.
-  button: {fileID: 1012905298}
+  activeOnEnd:
+  - {fileID: 1012905296}
 --- !u!114 &1738589600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,6 +2820,7 @@ GameObject:
   - component: {fileID: 1821392826}
   - component: {fileID: 1821392825}
   - component: {fileID: 1821392824}
+  - component: {fileID: 1821392827}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2833,6 +2943,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1821392822}
   m_CullTransparentMesh: 1
+--- !u!95 &1821392827
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821392822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1860457258
 GameObject:
   m_ObjectHideFlags: 0
@@ -2869,7 +2999,8 @@ MonoBehaviour:
   progressiveText: "For example, let's create a function for adding 2 numbers:\n\n<color=#2196F3>function</color>
     Sum(a, b)\n{\n\t<color=#2196F3>var</color> x = a + b;\n\n\t<color=#2196F3>return</color>
     x;\n}"
-  button: {fileID: 338486773}
+  activeOnEnd:
+  - {fileID: 338486772}
 --- !u!114 &1860457260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3430,7 +3561,8 @@ MonoBehaviour:
   progressiveText: "Functions are declared as such:\n\n<color=#2196F3>function</color>
     FunctionName(parameter1, parameter2, ...)\n{\n\t//Code\n\n\t<color=#2196F3>return</color>
     x;\n}"
-  button: {fileID: 1821392824}
+  activeOnEnd:
+  - {fileID: 1821392822}
 --- !u!114 &2079867582
 MonoBehaviour:
   m_ObjectHideFlags: 0

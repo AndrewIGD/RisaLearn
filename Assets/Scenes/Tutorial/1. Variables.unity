@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 63195761}
   - component: {fileID: 63195760}
   - component: {fileID: 63195759}
+  - component: {fileID: 63195762}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -257,6 +258,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63195757}
   m_CullTransparentMesh: 1
+--- !u!95 &63195762
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63195757}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &95755057
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +896,8 @@ MonoBehaviour:
 '
   progressiveText: Try this yourself! Declare the variables above and print each
     of them on a newline.
-  button: {fileID: 1696902444}
+  activeOnEnd:
+  - {fileID: 1696902442}
 --- !u!114 &226532925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,6 +1030,7 @@ GameObject:
   - component: {fileID: 284578514}
   - component: {fileID: 284578513}
   - component: {fileID: 284578512}
+  - component: {fileID: 284578515}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1130,6 +1153,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284578510}
   m_CullTransparentMesh: 1
+--- !u!95 &284578515
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284578510}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &458476140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,7 +1246,8 @@ MonoBehaviour:
 
     -
     and many other types...'
-  button: {fileID: 752788491}
+  activeOnEnd:
+  - {fileID: 752788489}
 --- !u!114 &458476143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1669,6 +1713,7 @@ GameObject:
   - component: {fileID: 752788493}
   - component: {fileID: 752788492}
   - component: {fileID: 752788491}
+  - component: {fileID: 752788494}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1791,6 +1836,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752788489}
   m_CullTransparentMesh: 1
+--- !u!95 &752788494
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752788489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &798385500
 GameObject:
   m_ObjectHideFlags: 0
@@ -1803,6 +1868,7 @@ GameObject:
   - component: {fileID: 798385503}
   - component: {fileID: 798385502}
   - component: {fileID: 798385501}
+  - component: {fileID: 798385505}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1925,6 +1991,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: 346.3}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &798385505
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798385500}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &868233653
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,7 +2672,8 @@ MonoBehaviour:
 
 '
   progressiveText: '- integers: <color=#2196F3>var</color> integer = <color=#FFEE58>3</color>;'
-  button: {fileID: 284578512}
+  activeOnEnd:
+  - {fileID: 284578510}
 --- !u!114 &1364316587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2824,7 +2911,8 @@ MonoBehaviour:
 
     - strings: <color=#2196F3>var</color> message = <color=#FFB74D>"Hello
     World!"</color>;'
-  button: {fileID: 2123104995}
+  activeOnEnd:
+  - {fileID: 2123104993}
 --- !u!114 &1655448812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2941,6 +3029,7 @@ GameObject:
   - component: {fileID: 1696902446}
   - component: {fileID: 1696902445}
   - component: {fileID: 1696902444}
+  - component: {fileID: 1696902447}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3063,6 +3152,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696902442}
   m_CullTransparentMesh: 1
+--- !u!95 &1696902447
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1696902442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1908446609
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,7 +3207,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: Variables in Risa are declared with the <color=#2196F3>var</color>
     keyword.
-  button: {fileID: 798385501}
+  activeOnEnd:
+  - {fileID: 798385500}
 --- !u!114 &1908446611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3397,7 +3507,8 @@ MonoBehaviour:
 
 '
   progressiveText: '- floats: <color=#2196F3>var</color> pi = <color=#FFEE58>3.14f</color>;'
-  button: {fileID: 63195759}
+  activeOnEnd:
+  - {fileID: 63195757}
 --- !u!114 &2056613425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3520,6 +3631,7 @@ GameObject:
   - component: {fileID: 2123104997}
   - component: {fileID: 2123104996}
   - component: {fileID: 2123104995}
+  - component: {fileID: 2123104998}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3642,6 +3754,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2123104993}
   m_CullTransparentMesh: 1
+--- !u!95 &2123104998
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123104993}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6700909203139693803
 PrefabInstance:
   m_ObjectHideFlags: 0

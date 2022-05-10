@@ -59,4 +59,40 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Puzzles/Tank Series/6. Rotate.unity
     guid: 227a9fef55806d8409edf04f76e27034
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Operations/Friends.unity
+    guid: 4d5bc9b50bbf36e429be757e5b19b2a4
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Operations/Globes.unity
+    guid: 97bf43dfc1d14c74b9baded3116a1db1
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Operations/Last Digit.unity
+    guid: eb63da3b01a159048854412313156a21
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Operations/Triple.unity
+    guid: 4690550202f6b2649a2935b275265769
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Conditional Structures/Minimum.unity
+    guid: 0308f972e2e4bea4ca3fa2d4710e7185
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Conditional Structures/Parity.unity
+    guid: e074f4dec01e34d40a7375e831451285
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Conditional Structures/Perfect Square.unity
+    guid: 252011b5e9d2f5d4ea976cc5b8fb038f
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Conditional Structures/Power Last Digit.unity
+    guid: 3c7cf34b64fbe744f85d1d4cdf8de070
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Repetitive Structures/Geometric mean.unity
+    guid: 022f3ba9b612cb249a6ff982644224cd
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Repetitive Structures/Multiple Print.unity
+    guid: f2febcd8fe9beeb4e91b569cb0ecf8df
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Repetitive Structures/Number Print.unity
+    guid: 602679a83bf664a44872b9b60612fbe2
+  - enabled: 1
+    path: Assets/Scenes/Algorithmics/Repetitive Structures/Power of 10.unity
+    guid: fc5c8fa5e73dd79429a5233d9bdecf0e
   m_configObjects: {}

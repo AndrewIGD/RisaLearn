@@ -633,7 +633,8 @@ MonoBehaviour:
     (i <= n)\n\n"
   progressiveText: How about a challenge? Read a variable n and print on the console
     the sum of the first n numbers.
-  button: {fileID: 1796840924}
+  activeOnEnd:
+  - {fileID: 1796840923}
 --- !u!114 &890277066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,6 +1542,7 @@ GameObject:
   - component: {fileID: 1796840926}
   - component: {fileID: 1796840925}
   - component: {fileID: 1796840924}
+  - component: {fileID: 1796840928}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1663,6 +1665,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -360}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1796840928
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796840923}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1915790827
 GameObject:
   m_ObjectHideFlags: 0
@@ -1723,7 +1745,8 @@ MonoBehaviour:
 
     <color=#2196F3>while</color>
     (i <= n)'
-  button: {fileID: 2051709979}
+  activeOnEnd:
+  - {fileID: 2051709977}
 --- !u!114 &1915790830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1836,6 +1859,7 @@ GameObject:
   - component: {fileID: 2051709981}
   - component: {fileID: 2051709980}
   - component: {fileID: 2051709979}
+  - component: {fileID: 2051709982}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1958,6 +1982,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051709977}
   m_CullTransparentMesh: 1
+--- !u!95 &2051709982
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051709977}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2116582962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,7 +2058,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: "Another repetition structure available in Risa is <color=#2196F3>while</color>
     with the following syntax:\n\n<color=#2196F3>while</color> (Condition)\n{\n\tExpression;\n}"
-  button: {fileID: 2128668257}
+  activeOnEnd:
+  - {fileID: 2128668255}
 --- !u!114 &2116582965
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2125,6 +2170,7 @@ GameObject:
   - component: {fileID: 2128668259}
   - component: {fileID: 2128668258}
   - component: {fileID: 2128668257}
+  - component: {fileID: 2128668260}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2247,6 +2293,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128668255}
   m_CullTransparentMesh: 1
+--- !u!95 &2128668260
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128668255}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6700909203139693803
 PrefabInstance:
   m_ObjectHideFlags: 0

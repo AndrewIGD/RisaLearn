@@ -610,7 +610,8 @@ MonoBehaviour:
   progressiveText: Here's another challenge. Read n ( 1<=n<=1000) from input and
     then read n elements into an array. Then, print each element of the array into
     a new line.
-  button: {fileID: 826544937}
+  activeOnEnd:
+  - {fileID: 826544936}
 --- !u!114 &819478701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +753,7 @@ GameObject:
   - component: {fileID: 826544939}
   - component: {fileID: 826544938}
   - component: {fileID: 826544937}
+  - component: {fileID: 826544941}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -874,6 +876,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -149}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &826544941
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826544936}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &914552514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1065,7 +1087,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: 'For storing collections of elements, arrays can be used. These
     are declared as such: <color=#2196F3>var</color> array[Dimension].'
-  button: {fileID: 1666082867}
+  activeOnEnd:
+  - {fileID: 1666082865}
 --- !u!114 &936754772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1215,6 +1238,7 @@ GameObject:
   - component: {fileID: 1143809445}
   - component: {fileID: 1143809444}
   - component: {fileID: 1143809443}
+  - component: {fileID: 1143809446}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1337,6 +1361,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143809441}
   m_CullTransparentMesh: 1
+--- !u!95 &1143809446
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143809441}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1188278904
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1843,6 +1887,7 @@ GameObject:
   - component: {fileID: 1666082869}
   - component: {fileID: 1666082868}
   - component: {fileID: 1666082867}
+  - component: {fileID: 1666082870}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1965,6 +2010,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666082865}
   m_CullTransparentMesh: 1
+--- !u!95 &1666082870
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666082865}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1870037931
 GameObject:
   m_ObjectHideFlags: 0
@@ -2025,7 +2090,8 @@ MonoBehaviour:
 '
   progressiveText: Elements of an array are indexed from 0 to Dimension - 1. Thus,
     if I want to access the first element of an array, I can simply call array[0].
-  button: {fileID: 1143809443}
+  activeOnEnd:
+  - {fileID: 1143809441}
 --- !u!114 &1870037934
 MonoBehaviour:
   m_ObjectHideFlags: 0

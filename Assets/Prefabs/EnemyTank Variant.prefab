@@ -211,6 +211,7 @@ PrefabInstance:
     - {fileID: 5271339062827615190, guid: b4b95cdc5fa5a6b40af8137b22199c96, type: 3}
     - {fileID: 5271339062827615189, guid: b4b95cdc5fa5a6b40af8137b22199c96, type: 3}
     - {fileID: 1664360039, guid: b4b95cdc5fa5a6b40af8137b22199c96, type: 3}
+    - {fileID: 3009911611249294174, guid: b4b95cdc5fa5a6b40af8137b22199c96, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b4b95cdc5fa5a6b40af8137b22199c96, type: 3}
 --- !u!4 &2322245468481928515 stripped
 Transform:
@@ -279,6 +280,7 @@ MonoBehaviour:
   deathVfx: {fileID: 0}
   barrelRotation: 0
   range: {fileID: 2119147992}
+  waypoints: []
 --- !u!114 &2119147992
 MonoBehaviour:
   m_ObjectHideFlags: 0

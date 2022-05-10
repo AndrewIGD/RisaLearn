@@ -835,7 +835,8 @@ MonoBehaviour:
   progressiveText: "One of the repetition structures available in Risa is <color=#2196F3>for</color>
     with the following syntax:\n\n<color=#2196F3>for</color> (Initialization ; Condition
     ; Continuation)\n{\n\t//Code\n}"
-  button: {fileID: 2092137232}
+  activeOnEnd:
+  - {fileID: 2092137230}
 --- !u!114 &765633146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1195,6 +1196,7 @@ GameObject:
   - component: {fileID: 1007780264}
   - component: {fileID: 1007780263}
   - component: {fileID: 1007780262}
+  - component: {fileID: 1007780265}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1317,6 +1319,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007780260}
   m_CullTransparentMesh: 1
+--- !u!95 &1007780265
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007780260}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1179358825
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1479,7 +1501,8 @@ MonoBehaviour:
 
     <color=#2196F3>for</color>
     (<color=#2196F3>var</color> i = 1; i <= <color=#FFEE58>10</color>; i = i + <color=#FFEE58>1</color>)'
-  button: {fileID: 2132732533}
+  activeOnEnd:
+  - {fileID: 2132732531}
 --- !u!114 &1244580666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1880,7 +1903,8 @@ MonoBehaviour:
     (<color=#2196F3>var</color> i = 1; i <= <color=#FFEE58>10</color>; i = i + <color=#FFEE58>1</color>)\n\n"
   progressiveText: Read a variable n from input and print on a new line every number
     from 1 to n.
-  button: {fileID: 1007780262}
+  activeOnEnd:
+  - {fileID: 1007780260}
 --- !u!114 &2030024770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1994,6 +2018,7 @@ GameObject:
   - component: {fileID: 2092137234}
   - component: {fileID: 2092137233}
   - component: {fileID: 2092137232}
+  - component: {fileID: 2092137235}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2116,6 +2141,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2092137230}
   m_CullTransparentMesh: 1
+--- !u!95 &2092137235
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092137230}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2132732531
 GameObject:
   m_ObjectHideFlags: 0
@@ -2128,6 +2173,7 @@ GameObject:
   - component: {fileID: 2132732535}
   - component: {fileID: 2132732534}
   - component: {fileID: 2132732533}
+  - component: {fileID: 2132732536}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2250,6 +2296,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2132732531}
   m_CullTransparentMesh: 1
+--- !u!95 &2132732536
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132732531}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6700909203139693803
 PrefabInstance:
   m_ObjectHideFlags: 0

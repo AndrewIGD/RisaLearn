@@ -355,7 +355,8 @@ MonoBehaviour:
     things as objects. An example of an object can be seen below:\n\n<color=#2196F3>var</color>
     car = {\n\t<color=#FFB74D>\"color\"</color>: <color=#FFB74D>\"green\"</color>,\n\t<color=#FFB74D>\"model\"</color>:
     <color=#FFB74D>\"Honda Civic\"</color>\n};"
-  button: {fileID: 828856974}
+  activeOnEnd:
+  - {fileID: 828856972}
 --- !u!114 &260589633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +469,7 @@ GameObject:
   - component: {fileID: 274226196}
   - component: {fileID: 274226195}
   - component: {fileID: 274226194}
+  - component: {fileID: 274226198}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -590,6 +592,26 @@ RectTransform:
   m_AnchoredPosition: {x: 80, y: -357}
   m_SizeDelta: {x: 160, y: 35.651}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &274226198
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274226193}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &390041600
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +652,8 @@ MonoBehaviour:
     = <color=#FFB74D>\"red\"</color>;\n\n"
   progressiveText: How about you try this yourself? Create a 'car' object with a
     single field 'color'. Then read a string into it and then print it on the console.
-  button: {fileID: 274226194}
+  activeOnEnd:
+  - {fileID: 274226193}
 --- !u!114 &390041602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1397,6 +1420,7 @@ GameObject:
   - component: {fileID: 828856976}
   - component: {fileID: 828856975}
   - component: {fileID: 828856974}
+  - component: {fileID: 828856977}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1519,6 +1543,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828856972}
   m_CullTransparentMesh: 1
+--- !u!95 &828856977
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828856972}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1021345099
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,6 +1777,7 @@ GameObject:
   - component: {fileID: 1463047499}
   - component: {fileID: 1463047498}
   - component: {fileID: 1463047497}
+  - component: {fileID: 1463047500}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1855,6 +1900,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463047495}
   m_CullTransparentMesh: 1
+--- !u!95 &1463047500
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463047495}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1537613988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2174,7 +2239,8 @@ MonoBehaviour:
     <color=#FFB74D>\"Honda Civic\"</color>\n};\n\n"
   progressiveText: 'We can then access these fields by doing car.color or car.model.
     These can even be set, and thus we can do: car.color = <color=#FFB74D>"red"</color>;'
-  button: {fileID: 1463047497}
+  activeOnEnd:
+  - {fileID: 1463047495}
 --- !u!114 &2067366193
 MonoBehaviour:
   m_ObjectHideFlags: 0

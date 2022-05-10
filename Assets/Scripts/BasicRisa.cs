@@ -37,7 +37,7 @@ public class BasicRisa : MonoBehaviour
 
                         while (_dataInIndex < input.Length)
                             if (input[_dataInIndex++] != '\n')
-                                line += input[_dataInIndex-1];
+                                line += input[_dataInIndex - 1];
                             else break;
 
                         return line;
@@ -55,12 +55,125 @@ public class BasicRisa : MonoBehaviour
         vm.GetIO().RedirectErr((data) => LogError(data));
 
         vm.LoadAllLibraries();
+        LoadNatives();
 
-        vm.LoadGlobalNative("Time", GetGameTime);
-
-        if(OnDebugInit != null)
+        if (OnDebugInit != null)
             OnDebugInit.Invoke(vm);
     }
+
+    private void LoadNatives()
+    {
+        vm.LoadGlobalNative("Time", GetGameTime);
+
+        ValueObject vectorClass = vm.CreateObject();
+        Value vectorAdd = vm.CreateNative(VectorAdd);
+        vectorClass.Set("Add", vectorAdd);
+
+        Value vectorDiff = vm.CreateNative(VectorDifference);
+        vectorClass.Set("Difference", vectorDiff);
+
+        Value distance = vm.CreateNative(VectorDistance);
+        vectorClass.Set("Distance", distance);
+
+        Value angle = vm.CreateNative(VectorAngle);
+        vectorClass.Set("Angle", angle);
+
+        Value normalize = vm.CreateNative(VectorNormalize);
+        vectorClass.Set("Normalize", normalize);
+
+        vm.LoadGlobal("Vector2", vectorClass.ToValue());
+
+        ValueObject angleClass = vm.CreateObject();
+        Value angleDiff = vm.CreateNative(AngleDifference);
+        angleClass.Set("Difference", angleDiff);
+
+        vm.LoadGlobal("Vector2", vectorClass.ToValue());
+        vm.LoadGlobal("Angle", angleClass.ToValue());
+    }
+
+
+    public Value VectorAdd(VM vm, Args args)
+    {
+        ValueObject v1 = args.Get(0).AsObject();
+        Vector2 a = new Vector2((float)v1.Get(1).value.AsFloat(), (float)v1.Get(0).value.AsFloat());
+
+        ValueObject v2 = args.Get(1).AsObject();
+        Vector2 b = new Vector2((float)v2.Get(1).value.AsFloat(), (float)v2.Get(0).value.AsFloat());
+
+        Vector2 c = a + b;
+        ValueObject result = vm.CreateObject();
+        result.Set("x", vm.CreateFloat(c.x));
+        result.Set("y", vm.CreateFloat(c.y));
+
+        return result.ToValue();
+    }
+
+    public Value VectorDifference(VM vm, Args args)
+    {
+        ValueObject v1 = args.Get(0).AsObject();
+        Vector2 a = new Vector2((float)v1.Get(1).value.AsFloat(), (float)v1.Get(0).value.AsFloat());
+
+        ValueObject v2 = args.Get(1).AsObject();
+        Vector2 b = new Vector2((float)v2.Get(1).value.AsFloat(), (float)v2.Get(0).value.AsFloat());
+
+        Vector2 c = a - b;
+        ValueObject result = vm.CreateObject();
+        result.Set("x", vm.CreateFloat(c.x));
+        result.Set("y", vm.CreateFloat(c.y));
+
+        return result.ToValue();
+    }
+
+    public Value VectorDistance(VM vm, Args args)
+    {
+        ValueObject v1 = args.Get(0).AsObject();
+        Vector2 a = new Vector2((float)v1.Get(1).value.AsFloat(), (float)v1.Get(0).value.AsFloat());
+
+        ValueObject v2 = args.Get(1).AsObject();
+        Vector2 b = new Vector2((float)v2.Get(1).value.AsFloat(), (float)v2.Get(0).value.AsFloat());
+
+        float d = Vector2.Distance(a, b);
+
+        return vm.CreateFloat(d);
+    }
+
+    public Value VectorNormalize(VM vm, Args args)
+    {
+        ValueObject v1 = args.Get(0).AsObject();
+        Vector2 a = new Vector2((float)v1.Get(1).value.AsFloat(), (float)v1.Get(0).value.AsFloat());
+
+        Vector2 c = a.normalized;
+        ValueObject result = vm.CreateObject();
+        result.Set("x", vm.CreateFloat(c.x));
+        result.Set("y", vm.CreateFloat(c.y));
+
+        return result.ToValue();
+    }
+
+    public Value VectorAngle(VM vm, Args args)
+    {
+        ValueObject v1 = args.Get(0).AsObject();
+        Vector2 a = new Vector2((float)v1.Get(1).value.AsFloat(), (float)v1.Get(0).value.AsFloat());
+
+        ValueObject v2 = args.Get(1).AsObject();
+        Vector2 b = new Vector2((float)v2.Get(1).value.AsFloat(), (float)v2.Get(0).value.AsFloat());
+
+        Vector2 diff = b - a;
+        diff.Normalize();
+
+        float angle = Mathf.Atan2(diff.y, diff.x) * Mathf.Rad2Deg;
+
+        return vm.CreateFloat(angle);
+    }
+
+    public Value AngleDifference(VM vm, Args args)
+    {
+        double a = args.Get(0).AsFloat();
+        double b = args.Get(1).AsFloat();
+
+        return vm.CreateFloat(Mathf.DeltaAngle((float)a, (float)b));
+    }
+
 
     private Value GetGameTime(VM vm, Args args)
     {
@@ -88,8 +201,7 @@ public class BasicRisa : MonoBehaviour
 
         vm.LoadAllLibraries();
 
-        vm.LoadGlobalNative("Time", GetGameTime);
-
+        LoadNatives();
     }
 
     public void Run()

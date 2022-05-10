@@ -9,7 +9,7 @@ public class ProgressiveText : MonoBehaviour
     [SerializeField] float timeBetweenTextAppearances;
     [SerializeField] [TextArea] string existingText;
     [SerializeField] [TextArea] string progressiveText;
-    [SerializeField] Button button;
+    [SerializeField] GameObject[] activeOnEnd;
 
     TextMeshProUGUI _text;
     int _index = 0;
@@ -21,7 +21,8 @@ public class ProgressiveText : MonoBehaviour
 
         _text = GetComponent<TextMeshProUGUI>();
 
-        button.gameObject.SetActive(false);
+        for(int i=0;i<activeOnEnd.Length;i++)
+            activeOnEnd[i].SetActive(false);
 
         _text.text = existingText;
 
@@ -62,6 +63,7 @@ public class ProgressiveText : MonoBehaviour
             }
         }
 
-        button.gameObject.SetActive(true);
+        for (int i = 0; i < activeOnEnd.Length; i++)
+            activeOnEnd[i].SetActive(true);
     }
 }

@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 45500669}
   - component: {fileID: 45500668}
   - component: {fileID: 45500667}
+  - component: {fileID: 45500670}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -257,6 +258,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45500665}
   m_CullTransparentMesh: 1
+--- !u!95 &45500670
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45500665}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &68973597
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,6 +290,7 @@ GameObject:
   - component: {fileID: 68973601}
   - component: {fileID: 68973600}
   - component: {fileID: 68973599}
+  - component: {fileID: 68973602}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -391,6 +413,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 68973597}
   m_CullTransparentMesh: 1
+--- !u!95 &68973602
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 68973597}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &102012515
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,7 +489,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: Up next, you will print the maximum between 2 numbers. But first,
     let's cover the 2 aspects of comparing numbers.
-  button: {fileID: 164220892}
+  activeOnEnd:
+  - {fileID: 164220890}
 --- !u!114 &102012518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,6 +641,7 @@ GameObject:
   - component: {fileID: 164220894}
   - component: {fileID: 164220893}
   - component: {fileID: 164220892}
+  - component: {fileID: 164220895}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -720,6 +764,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 164220890}
   m_CullTransparentMesh: 1
+--- !u!95 &164220895
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164220890}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &210039006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -898,7 +962,8 @@ MonoBehaviour:
 '
   progressiveText: "We will also use a conditional statement with the following syntax:\n\n<color=#2196F3>if</color>(Condition)\n{\n\tExpression1;\n}\n<color=#2196F3>else</color>
     Expression2;"
-  button: {fileID: 2108519983}
+  activeOnEnd:
+  - {fileID: 2108519981}
 --- !u!114 &338535831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1843,7 +1908,8 @@ MonoBehaviour:
 '
   progressiveText: The operands necessary for such operations are '<'(less than),
     '>' (greater than), '<=' (less than or equal), '>=' (greater than or equal).
-  button: {fileID: 45500667}
+  activeOnEnd:
+  - {fileID: 45500665}
 --- !u!114 &1249449294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2449,7 +2515,8 @@ MonoBehaviour:
   existingText: 
   progressiveText: Now try this yourself. Declare 2 variables, a and b, and print
     the maximum between them.
-  button: {fileID: 68973599}
+  activeOnEnd:
+  - {fileID: 68973597}
 --- !u!114 &1896867273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2560,6 +2627,7 @@ GameObject:
   - component: {fileID: 2108519985}
   - component: {fileID: 2108519984}
   - component: {fileID: 2108519983}
+  - component: {fileID: 2108519986}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -2682,6 +2750,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2108519981}
   m_CullTransparentMesh: 1
+--- !u!95 &2108519986
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108519981}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 712d438d9f96ca547964c039f52c9f69, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &6700909203139693803
 PrefabInstance:
   m_ObjectHideFlags: 0
