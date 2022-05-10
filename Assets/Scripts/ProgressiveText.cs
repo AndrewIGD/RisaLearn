@@ -10,18 +10,29 @@ public class ProgressiveText : MonoBehaviour
     [SerializeField] [TextArea] string existingText;
     [SerializeField] [TextArea] string progressiveText;
     [SerializeField] GameObject[] activeOnEnd;
+    [SerializeField] GameObject[] activateOnStart;
 
     TextMeshProUGUI _text;
     int _index = 0;
 
     AudioSource source;
+
+    void OnDisable()
+    {
+        for (int i = 0; i < activateOnStart.Length; i++)
+            activateOnStart[i].SetActive(false);
+    }
+
     public void OnEnable()
     {
         timeBetweenTextAppearances = 0.025f;
 
         _text = GetComponent<TextMeshProUGUI>();
 
-        for(int i=0;i<activeOnEnd.Length;i++)
+        for (int i = 0; i < activateOnStart.Length; i++)
+            activateOnStart[i].SetActive(true);
+
+        for (int i=0;i<activeOnEnd.Length;i++)
             activeOnEnd[i].SetActive(false);
 
         _text.text = existingText;
